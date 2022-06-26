@@ -5,15 +5,12 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
-
-@Getter
 @Setter
-@Document(collection = "statusAccounts")
+@Getter
+@Document(collection = "accounts")
 public class StatusAccount {
     @Id
-    private Integer idStatusAccount;
-    private String idCustomer;
-    private String nameCustomer;
-    private List<Account> accounts;
+    private Integer idStatusAccount;      //id de cuenta
+    private Integer idCustomer;   //número de cuenta
+    private String nameCustomer;          //saldo
 }
