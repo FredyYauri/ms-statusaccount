@@ -1,4 +1,4 @@
-package com.proyecto.statusaccount.msstatusaccount.entity;
+package com.proyecto.statusaccount.msstatusaccount.infrastructure.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "accounts")
 public class StatusAccount {
     @Id
-    private Integer idStatusAccount;      //id de cuenta
-    private Integer idCustomer;   //número de cuenta
-    private String nameCustomer;          //saldo
+    private Integer idStatusAccount;
+    private Integer idCustomer;
+    private String nameCustomer;
 }
